@@ -1,106 +1,71 @@
-!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>forms</title>
-    <style>
-      body {
-        background-color: #414141;
-        color: white;
-      }
-      form {
-        background-color: cyan;
-        text-align: center;
-      }
-    </style>
-    <link rel="stylesheet" href="hello.css" />
+
+    <link rel="stylesheet" href="form.css" />
   </head>
   <body>
-    <a href="index.html"><button>way to index</button></a>
-    <h1 style="text-align: center">forms in html</h1>
-    <form action="index.html" method="get ">
-      <label for="fname">First Name:</label>
-      <input type="text" placeholder="Eg. Ram" id="fname" /><br />
-      <label for="lname">Last Name:</label>
-      <input type="text" placeholder="Eg. Thapa" id="lname" /><br />
-      <label for="email">Email:</label>
+    <form action="index.php" method="post" id="form">
+      <label for="Username">Username:</label>
+      <input
+        type="text"
+        placeholder="Samir Thapa"
+        name="Username"
+        id="Username"
+        required
+      />
+      <br />
+      <label for="Password">Password:</label>
+      <input
+        type="password"
+        placeholder="Samir321"
+        name="Password"
+        id="Password"
+        minlength="6"
+        required
+      />
+      <br />
+      <label for="Email">Email:</label>
       <input
         type="email"
-        placeholder="Eg. ram.thapa@example.com"
-        id="email"
-      /><br />
-      <label for="password">Password:</label>
-      <input type="password" id="password" placeholder="password" /><br /><br />
-      <label for="gender"></label>
-      <input type="radio" />
-      <button type="submit">submit</button>
+        name="Email"
+        id="Email"
+        placeholder="samirthapa321@gmail.com"
+        required
+      />
+      <br />
+      <label for="Phone">Phone</label>
+      <input
+        type="tel"
+        id="Phone"
+        name="Phone"
+        placeholder="+977 980-1234567"
+        required
+        pattern="+977-[0-9]{3}-[0-9]{7}"
+      />
+      <br />
+      <label for="Gender">Gender:</label>
+      <label for="Male">Male</label>
+      <input type="radio" id="Male" value="Male" name="Gender" />
+      <label for="Female">Female</label>
+      <input type="radio" id="Female" value="Female" name="Gender" />
+      <label for="Others">Others</label>
+      <input type="radio" id="Others" value="Others" name="Gender" />
+      <br />
+      <label for="payment">Payment:</label>
+      <select>
+        <option value="Esewa" id="payment">Esewa</option>
+        <option value="khalti" id="payment">Khalti</option>
+        <option value="Visa" id="payment">Visa Card</option>
+      </select>
+      <br />
+      <br />
+      <input type="reset" />
+      <input type="submit" />
     </form>
-    <div class="hello">
-      <p>
-        this is a paragrapgh tag written inside div hello tag. I am learning
-        inline css throught this page forms lets see what i can do!
-      </p>
-    </div>
-    <p>this is a paragraph tag</p>
-    <center>this text is written inside center tag</center>
-    <div class="hello">
-      this is text written inside div tag of class hello tag
-    </div>
-    <i>this text is written inside ittalic font</i><br />
-    <b>this text is written inside bold tag</b><br />
-    <body>
-    <h1 style="text-align: center;">This is heading first tag    </h1>
-    <p style="color: aqua;">Learning different types of heading tags</p>
-    <p>this is a paragraph tag. The below tag are heading tags    </p>
-    <h1>This is heading first tag    </h1>
-    <h2>This is heading second tag    </h2>
-    <h3>This is heading third tag    </h3>
-    <h4>This is heading fourth tag    </h4>
-    <h5>This is heading fifth tag    </h5>
-    <h6>This is heading sixth tag    </h6>
-
-    <hr><p>this text is written inside two horizontal rows line.</p><hr>
-    <a href="https://www.youtube.com/">Youtube</a> 
-    <p>the above youtube link is the example of an anchor a tag</p>
-<hr><hr>
-<p>You can contact to me through:</p>
-<ul>
-    
-    <li><a href="mailto:kapilsince2007@gmail.com">Email</a></li>
-    <li><a href="tel:+977 9768377410">Phone</a></li>
-    <li><a href="https://www.instagram.com/kapillpokharel">Social Media</a></li>
-</ul>
-<address>
-    <p>Kapil Pokharel</p>
-    <p>Contact No: +977 9768377410</p>
-    <p>Email: kapilsince2007@gmail.com</p>
-</address>
-<ul>
-    <li>litchi</li>
-    <li>mango</li>
-    <li>grape</li>
-    <li>banana</li>
-    <li>orange</li>
-</ul>
- 
-<pre>this is pre tag. the text written inside this tag will be displayed as it is. 
-
-
-
-    uhkfkssdjk.      kjgfiusefgjfg.  
-</pre>
-<header></header>
- <aside></aside>
-<section></section>
-<article></article>
-<nav></nav>
- <footer></footer>
-
-<a href="google.com">
-    <button>Go to Forms</button>
-</a>
-
-
+    <p>hello world!!!</p>
   </body>
 </html>
