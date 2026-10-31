@@ -1,0 +1,47 @@
+h1 {
+  border: 5px solid cyan;
+  border-radius: 20px;
+  text-align: center;
+  background-color: hsl(0, 12%, 20%);
+  color: red;
+}
+p {
+  border-bottom: 5px solid tomato;
+  border-top: 5px solid burlywood;
+  border-left: 5px dotted lime;
+  border-right: 5px double red;
+  border-radius: 20px;
+}
+h2 {
+  text-shadow:
+    3px 3px 5px rgb(155, 24, 24),
+    -3px -3px 5px rgb(9, 16, 209);
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+#box1 {
+  height: 100px;
+  width: 100px;
+  color: green;
+  background-color: whitesmoke;
+  box-shadow: 3px 3px 5px hsl(0, 6%, 16%);
+}
+.box {
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 50px;
+}
+#box2 {
+  background-color: aqua;
+}
+#box3 {
+  background-color: hsl(0, 55%, 43%);
+}
+#border {
+  background-color: black;
+  height: 10px;
+}
